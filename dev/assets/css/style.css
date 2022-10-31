@@ -6844,7 +6844,6 @@ fieldset:disabled .btn {
 .toast-container {
   position: absolute;
   z-index: 1090;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
@@ -7633,15 +7632,7 @@ fieldset:disabled .btn {
   height: var(--bs-spinner-height);
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
-  -webkit-animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
-}
-@-webkit-keyframes spinner-border {
-  to {
-    transform: rotate(360deg)
-      /* rtl:ignore */
-    ;
-  }
 }
 @keyframes spinner-border {
   to {
@@ -7664,15 +7655,6 @@ fieldset:disabled .btn {
   --bs-spinner-width: 1rem;
   --bs-spinner-height: 1rem;
   --bs-spinner-border-width: 0.2em;
-}
-@-webkit-keyframes spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: none;
-  }
 }
 @keyframes spinner-grow {
   0% {
@@ -8291,13 +8273,7 @@ fieldset:disabled .btn {
   min-height: 1.2em;
 }
 .placeholder-glow .placeholder {
-  -webkit-animation: placeholder-glow 2s ease-in-out infinite;
   animation: placeholder-glow 2s ease-in-out infinite;
-}
-@-webkit-keyframes placeholder-glow {
-  50% {
-    opacity: 0.2;
-  }
 }
 @keyframes placeholder-glow {
   50% {
@@ -8309,14 +8285,7 @@ fieldset:disabled .btn {
   mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
-  -webkit-animation: placeholder-wave 2s linear infinite;
   animation: placeholder-wave 2s linear infinite;
-}
-@-webkit-keyframes placeholder-wave {
-  100% {
-    -webkit-mask-position: -200% 0%;
-    mask-position: -200% 0%;
-  }
 }
 @keyframes placeholder-wave {
   100% {
@@ -8372,26 +8341,22 @@ fieldset:disabled .btn {
   z-index: 1030;
 }
 .sticky-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
 }
 .sticky-bottom {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   z-index: 1020;
 }
 @media (min-width: 576px) {
   .sticky-sm-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-sm-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -8399,13 +8364,11 @@ fieldset:disabled .btn {
 }
 @media (min-width: 768px) {
   .sticky-md-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-md-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -8413,13 +8376,11 @@ fieldset:disabled .btn {
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-lg-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -8427,13 +8388,11 @@ fieldset:disabled .btn {
 }
 @media (min-width: 1200px) {
   .sticky-xl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-xl-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -8441,13 +8400,11 @@ fieldset:disabled .btn {
 }
 @media (min-width: 1400px) {
   .sticky-xxl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-xxl-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -8591,7 +8548,6 @@ fieldset:disabled .btn {
   position: fixed !important;
 }
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 .top-0 {
@@ -29870,30 +29826,12 @@ button:focus {
   border-radius: 100%;
   height: auto;
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -30%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
   }
 }
 @keyframes fadeInDown {
@@ -29906,16 +29844,6 @@ button:focus {
     transform: none;
   }
 }
-@-webkit-keyframes priceFade {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-}
 @keyframes priceFade {
   0% {
     opacity: 1;
@@ -29924,16 +29852,6 @@ button:focus {
   100% {
     opacity: 0;
     transform: translateY(80%);
-  }
-}
-@-webkit-keyframes priceShow {
-  0% {
-    opacity: 0;
-    transform: translateY(-80%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes priceShow {
@@ -29946,16 +29864,6 @@ button:focus {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes ripple-1 {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
 @keyframes ripple-1 {
   0% {
     transform: scale(1);
@@ -29966,16 +29874,6 @@ button:focus {
     opacity: 0;
   }
 }
-@-webkit-keyframes ripple-2 {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.7);
-    opacity: 0;
-  }
-}
 @keyframes ripple-2 {
   0% {
     transform: scale(1);
@@ -29983,19 +29881,6 @@ button:focus {
   }
   100% {
     transform: scale(1.7);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes loader-scale {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
     opacity: 0;
   }
 }
@@ -30041,7 +29926,6 @@ button:focus {
   border: 4px solid #3f78e0;
   box-shadow: none;
   border-radius: 50%;
-  -webkit-animation: loader-scale 1s ease-out infinite;
   animation: loader-scale 1s ease-out infinite;
 }
 .bg-dark>.swiper-hero:before,
@@ -33715,7 +33599,6 @@ button.hamburger span {
   }
 }
 .swiper-container .swiper-slide [class*=animate__] {
-  -webkit-animation-name: none;
   animation-name: none;
   visibility: hidden;
 }
@@ -33723,35 +33606,27 @@ button.hamburger span {
   visibility: visible;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__fadeInUp {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__fadeInDown {
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__fadeInTopRight {
-  -webkit-animation-name: fadeInTopRight;
   animation-name: fadeInTopRight;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInUp {
-  -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInDown {
-  -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInLeft {
-  -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__slideInRight {
-  -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
 }
 .swiper-container .swiper-slide.swiper-slide-active [class*=animate__].animate__zoomIn {
-  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
 .item-inner {
@@ -38193,7 +38068,6 @@ figure.overlay img {
 .itooltip-inner {
   padding: 0.7rem 1rem;
   box-shadow: var(--shadow);
-  -webkit-animation: 0.15s linear fadeIn;
   animation: 0.15s linear fadeIn;
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.9);
@@ -38464,16 +38338,13 @@ video.player {
   border-radius: 50%;
   background: #fff;
   opacity: 0.8;
-  -webkit-animation: ripple-1 2s infinite ease-in-out;
   animation: ripple-1 2s infinite ease-in-out;
   z-index: -1;
 }
 .plyr__control--overlaid::after,
 .btn-circle.ripple::after {
   opacity: 0.6;
-  -webkit-animation: ripple-2 2s infinite ease-in-out;
   animation: ripple-2 2s infinite ease-in-out;
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 .btn-blue.btn-circle.ripple::before,
@@ -38709,11 +38580,9 @@ video.player {
   display: none;
 }
 .pricing-wrapper [class*=col-] .pricing.card .prices .price-show {
-  -webkit-animation: priceShow 0.6s forwards;
   animation: priceShow 0.6s forwards;
 }
 .pricing-wrapper [class*=col-] .pricing.card .prices .price-hide {
-  -webkit-animation: priceFade 0.6s forwards;
   animation: priceFade 0.6s forwards;
 }
 .pricing-switcher-wrapper {
@@ -39463,7 +39332,6 @@ footer [class*=col-] .widget+.widget {
   margin-top: 1rem;
 }
 .sticky-sidebar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 100%;
